@@ -1,0 +1,48 @@
+.desktop-nav {
+    background-color: white;
+    width: 1152px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 75px;
+    padding: auto 11px;
+    margin-top: 12px;
+    max-height: 51px;
+}
+
+.nav-left_panel {
+    width: 646px;
+    height: 19px;
+    display: flex;
+    list-style: none;
+    img {
+        margin-right: 50px;
+    }
+
+    li {
+        margin-right: 50px;
+    }
+
+}
+
+.nav-right_panel {
+    width: 200px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    a {
+        margin-right: 24px;
+    }
+}
+
+.button__login {
+    background-color: #38BFF2;
+    padding: 9px 14px;
+    font-size: 14px;
+
+    img {
+        width: 11px;
+        margin-right: 5px;
+        margin-left: 0;
+    }
+}
