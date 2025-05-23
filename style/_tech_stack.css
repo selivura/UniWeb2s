@@ -1,0 +1,127 @@
+.tech_stack {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 0;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 22px;
+  }
+}
+
+.tech_stack-wrap {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  border-radius: 48px;
+  background-color: #EAF2F5;
+  padding-left: 133px;
+  padding-right: 136px;
+  padding-top: 42px;
+  padding-bottom: 1px;
+  margin-bottom: 94px;
+}
+
+.tech_stack-right {
+  margin-bottom: 84px auto;
+  max-width: 428px;
+
+  p {
+    font-size: 20px;
+    color: #22253B;
+  }
+}
+
+
+.tags {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  min-width: 428px;
+  gap: 10px;
+}
+
+.tag {
+  padding: 11px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: lighter;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.python {
+  background-color: #5096FF;
+}
+
+.network {
+  background-color: #FFB359;
+}
+
+.database {
+  background-color: #FF6F50;
+}
+
+.flask {
+  background-color: #4BD071;
+}
+
+.qa {
+  background-color: #50C0FF;
+}
+
+.docker {
+  background-color: #4B77B9;
+}
+
+.git {
+  background-color: #AF93FF;
+}
+
+@media (max-width: 1200px) {
+  .tech_stack-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .tech_stack-wrap {
+    padding: 16px;
+
+    img {
+      display: none;
+    }
+  }
+
+  .tech_stack-right {
+    p {
+      display: none;
+    }
+  }
+
+}
+
+@media(max-width: 500px) {
+  .tech_stack-wrap {
+    min-width: auto;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+
+  .tags {
+    align-items: center;
+    justify-content: center;
+    min-width: auto;
+    max-width: fit-content;
+  }
+
+  .tag {
+    font-size: 14px;
+  }
+}

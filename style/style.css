@@ -1,3 +1,9 @@
-@import url(nav.css);
-@import url(base.css);
-@import url(promo.css);
+@import url(_nav.css);
+@import url(_base.css);
+@import url(_promo.css);
+@import url(_tech_stack.css);
+@import url(_pros.css);
+@import url(_cards_block.css);
+@import url(_how_it_works.css);
+@import url(_footer.css);
+

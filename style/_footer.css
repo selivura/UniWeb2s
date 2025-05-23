@@ -1,0 +1,179 @@
+.footer-main {
+    display: flex;
+}
+
+.footer-line {
+    background-color: #D8D8D8;
+    height: 1px;
+    border: none;
+    margin: 28px auto;
+}
+
+.socials {
+    margin-right: 102px;
+}
+
+.footer-logo {
+    width: 87.16px;
+    margin-bottom: 43px;
+}
+
+.socials-icons {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.social-btn {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: #22253B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+    background: #F15525;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.footer-buttons {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    column-gap: 164px;
+    row-gap: 16px;
+    margin-right: 287px;
+}
+
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contacts-phone {
+    margin: 0;
+    text-align: right;
+    font-size: 16px;
+    color: #38BFF2;
+}
+
+.contacts-email {
+    margin: 0;
+    text-align: right;
+    font-size: 16px;
+}
+
+.contacts-legal {
+    margin: 0;
+    text-align: right;
+    color: #8E8E8E;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        color: #8E8E8E;
+        font-size: 16px;
+    }
+}
+
+.copyright-legal {
+    display: flex;
+    gap: 58px;
+
+    a {
+
+        font-size: 16px;
+        color: #8E8E8E;
+
+        &:hover {
+            color: #F15525;
+        }
+    }
+
+}
+
+@media(max-width: 1150px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-buttons {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts-legal {
+        text-align: center;
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .copyright-legal {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 30px;
+
+        a {
+            font-size: 12px;
+        }
+
+    }
+
+}

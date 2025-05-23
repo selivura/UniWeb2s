@@ -1,0 +1,153 @@
+.how_it_works {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how_it_works-desc {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.how_it_works-line {
+    background-color: #EAF2F5;
+    width: 1px;
+    border: none;
+}
+
+.how_it_works-main {
+    padding: 35px 48px;
+    display: flex;
+    gap: 60px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.how_it_works-card {
+    height: 299px;
+    width: 282px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-number {
+    font-size: 77px;
+    font-weight: bold;
+    color: #38BFF2;
+    margin: 0;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.main-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.how_it_works-demo {
+    padding: 17.5px 13px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 539px;
+    height: 89px;
+    gap: 18px;
+    background-color: white;
+    border-radius: 110px;
+    display: flex;
+    margin-bottom: 73px;
+
+    p {
+        font-size: 15px;
+        font-weight: 650;
+    }
+}
+
+.how_it_works-guarantee {
+    display: flex;
+    align-items: center;
+    background-color: #EAF2F5;
+    border-radius: 30px;
+    gap: 43px;
+    padding: 54px 48px;
+    max-height: 212px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+
+    p {
+        line-height: 1.5;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1175px) {
+    .how_it_works-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how_it_works-line {
+        width: 252px;
+        height: 1px;
+    }
+
+    .how_it_works-card {
+        width: 100%;
+        max-width: 252px;
+    }
+
+    .how_it_works-guarantee {
+        flex-direction: column;
+        padding: 38px 20px;
+        min-height: 400px;
+        p {
+            margin: 0;
+            font-size: 14px;
+            max-height: 189px;
+            text-align: center;
+            margin: 18px 0;
+        }
+        br
+        {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .how_it_works-demo {
+        border-radius: 40px;
+        height: 100%;
+        max-width: 300px;
+        flex-direction: column;
+        padding: 14px 20px;
+
+        .button__default {
+            max-width: 260px;
+        }
+
+    }
+}
+@media(max-width: 550px) {
+    
+    .how_it_works-guarantee
+    {
+        min-height: 470px;
+        gap:18px;
+        max-width: 300px;
+        img
+        {
+            max-height: 75px;
+        }
+    }
+}

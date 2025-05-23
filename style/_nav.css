@@ -1,0 +1,148 @@
+.desktop-nav {
+    background-color: white;
+    border-radius: 75px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 11px;
+}
+
+.mobile-nav {
+    background-color: white;
+    border-radius: 75px;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 11px;
+}
+
+.mobile-nav__menu {
+    display: none;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: white;
+    z-index: 1001;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    margin-left: 54px;
+    margin-right: 10px;
+    max-height:calc(100vh - 20px);
+    min-height: 576px;
+    border-radius: 20px;
+    padding: 20px 24px;
+}
+
+.mobile-nav__menu.active {
+    display: block;
+}
+
+.mobile-nav__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(34, 37, 59, 0.9);
+    z-index: 1000;
+}
+
+.mobile-nav__overlay.active {
+    display: block;
+}
+
+.button__menu {
+    background-color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button__close_menu {
+    align-self: flex-end;
+    background-color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-button_list {
+    display: flex;
+    list-style: none;
+    height: 19px;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+}
+
+
+.nav-button_list__mobile {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+}
+
+
+.nav-right_panel {
+    width: 200px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.button__login {
+    background-color: #38BFF2;
+    padding: 9px 14px;
+    font-size: 14px;
+    border-radius: 34px;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    img {
+        width: 11px;
+        margin-right: 5px;
+        margin-left: 0;
+    }
+}
+
+.button__mobile-login {
+    background-color: #38BFF2;
+    padding: 9px 14px;
+    font-size: 14px;
+    border-radius: 34px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 208px;
+    height: 38px;
+    img {
+        width: 11px;
+        margin-right: 5px;
+        margin-left: 0;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+}
