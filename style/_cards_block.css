@@ -21,8 +21,14 @@
 }
 
 .picture-type {
+    display: flex;
     padding: 20px 67px;
     max-width: 400px;
+       justify-content: center;
+
+    img {
+        max-width: 266px;
+    }
 }
 
 .text_card-title {
@@ -42,10 +48,11 @@
     .cards_block {
         justify-content: center;
     }
-    .generic_card
-    {
+
+    .generic_card {
         max-height: 244px;
     }
+
     .text-type {
         padding: 26px 16px;
         max-width: 300px;
@@ -61,11 +68,12 @@
     }
 
     .picture-type {
-        max-width: 300px;
+        width: 300px;
         padding: 20px 16px;
 
         img {
-            max-width: 100%;
+            max-width: 217px;
+            max-width: 204px;
         }
     }
 
